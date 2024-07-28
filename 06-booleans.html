@@ -29,8 +29,68 @@ const age = 15;
   else {console.log('You can\'t drive')}
 
 */
-
+/*
 console.log(true && false);
-    </script>
+//and symbol &&
+console.log(true || false);
+//or symbol ||
+console.log(!true);
+//not symbol ! (results in false)
+console.log(!false);
+
+5 behaves like true (truthy)
+Any value that is not a falsy is a truthy
+0 behave likes false (falsy)
+0, '', NaN(not a number), undefined, null,
+
+if (5) {
+  console.log('truthy');
+}
+
+if (0) {
+  console.log('truthy');
+}
+
+const cartQuantity = 5;
+if (cartQuantity) {
+  console.log('cart has products');
+  
+}
+
+
+console.log(!0);
+
+console.log('text' / 5);
+
+let variable1;
+
+console.log(variable1);
+
+const variable2 = undefined;
+
+? is like if and colon is like else
+
+if (true) {'truthy'} else {'falsy'}
+
+they can be saved in variables
+*/
+
+
+const result = true ? 'truthy' : 'falsy';
+console.log(result);
+
+false && console.log('hello');
+//blocks the code on the right and can be saved in a variable
+
+const message = 5 && 'hello';
+console.log(message);
+//if statement shortcuts
+
+const currency1 = 'EUR' || 'USD';
+console.log(currency1);
+
+const currency2 = undefined || 'USD';
+console.log(currency2);
+</script>
 
 </html>
