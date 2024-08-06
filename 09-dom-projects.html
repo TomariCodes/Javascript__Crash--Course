@@ -3,13 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM</title>
+    <title>DOM Projects</title>
   </head>
   <body>
-      <button>hello</button>
-      <button class="js-button">Second Button</button>
-      <script>
+    <p>YouTube Subscribe Button</p>
+      <button onclick="subscribe();" class="js-subscribe-button">
+        Subscribe</button>
 
+
+
+        <p>Rock Paper Scissors</p>
+
+          <p>Amazon Shipping Calculator</p>
+          <p>Orders under $40=+$10 shipping.</p>
+          <p>Orders over $40= FREE shipping.</p>
+          <input type="text" placeholder="Cost of order">
+          <button>Calculate</button>
+      <script>
+          const buttonElement = document.querySelector('.js-subscribe-button');
+function subscribe() {
+
+if (buttonElement.innerText === 'Subscribe') {
+    buttonElement.innerText = 'Subscribed';
+} else {
+    buttonElement.innerText = 'Subscribe';
+}
+}
     </script>
 
 </body>
