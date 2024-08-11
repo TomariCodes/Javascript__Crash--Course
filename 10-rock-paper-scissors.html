@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles/10-rock-paper-scissors.css" />
+    <script src="script/10-rock-paper-scissors.js"></script>
+    <p class="Title">Rock Paper Scissors</p>
+    <button
+      class="move-button"
+      onclick="
+playGame('rock');"
+    >
+      <img
+        class="play__img"
+        src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png"
+        alt="A fist emoji meant to represent a rock"
+      />
+    </button>
+
+    <button
+      class="move-button"
+      onclick="
+playGame('paper');"
+    >
+      <img
+        class="play__img"
+        src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png"
+        alt="An open hand meant to represent paper"
+      />
+    </button>
+    <button
+      class="move-button"
+      onclick="
+      playGame('scissors');"
+    >
+      <img
+        class="play__img"
+        src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png"
+        alt="Two fingers meant to represent scissors"
+      />
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-moves moves"></p>
+    <p class="js-score score"></p>
+
+    <button
+      class="reset"
+      onclick="
+
+score.wins = 0;
+score.losses = 0;
+score.ties = 0;
+localStorage.removeItem('score');
+updateScoreElement ();
+"
+    >
+      Reset Score
+    </button>
+  </body>
+</html>
