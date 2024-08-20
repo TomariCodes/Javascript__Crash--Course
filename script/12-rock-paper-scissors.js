@@ -32,7 +32,7 @@ function autoPlay() {
   } else if (isAutoPlaying === true) {
     clearInterval(intervalId);
   isAutoPlaying = false;
-}
+  }
 }
   function playGame(playerMove) {
     const computerMove = pickComputerMove();

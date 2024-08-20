@@ -47,7 +47,6 @@
 run(function() {
   console.log('hello4')
 });
-*/
 
 setTimeout(function() {
   console.log('timeout');
@@ -61,6 +60,19 @@ setInterval(function() {
 }, 3000);
 //runs every three seconds
 console.log('next line2')
+*/
+
+['make dinner',
+  'wash dishes',
+  'watch youtube'
+].forEach(function(value, index) {
+  if (value === 'wash dishes') {
+    return;
+  }
+  console.log(index);
+  console.log(value);
+})
+
 </script>
 
 </body>
