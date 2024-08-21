@@ -6,10 +6,8 @@
     <title>Advanced Functions</title>
   </head>
   <body>
-
-      <script>
-
-        /*
+    <script>
+      /*
         function greeting() {
           console.log('hello');
       }
@@ -62,18 +60,38 @@ setInterval(function() {
 console.log('next line2')
 */
 
-['make dinner',
-  'wash dishes',
-  'watch youtube'
-].forEach(function(value, index) {
-  if (value === 'wash dishes') {
-    return;
-  }
-  console.log(index);
-  console.log(value);
-})
+      ["make dinner", "wash dishes", "watch youtube"].forEach(function (
+        value,
+        index
+      ) {
+        if (value === "wash dishes") {
+          return;
+        }
+        console.log(index);
+        console.log(value);
+      });
 
-</script>
+      const regularFunction = function (param, param2) {
+        console.log("hello");
+        return 5;
+      };
 
-</body>
+      const arrowFunction = (param, param2) => {
+        console.log("hello");
+        return 5;
+      };
+
+      arrowFunction();
+
+      const oneParam = (param) => {
+        console.log(param + 1);
+      };
+
+      oneParam(2);
+
+      const oneLine = () => 2 + 3;
+
+      console.log(oneLine);
+    </script>
+  </body>
 </html>
