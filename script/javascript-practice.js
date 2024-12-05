@@ -49,3 +49,12 @@ concessions.map((concession) => {
 });
 
 console.log(newMenu);
+
+const result = 5 + 5 ? "truthy" : "falsy"; // 10
+console.log(result);
+const result2 = 5 - 5 ? "truthy" : "falsy"; // 0 
+console.log(result2);
+const result3 = 5 - 6 ? "truthy" : "falsy"; // -1
+console.log(result3);
+const result4 = 'Babydoll' - 6 ? "truthy" : "falsy"; // NAN
+console.log(result4);
