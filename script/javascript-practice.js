@@ -52,17 +52,18 @@ console.log(newMenu);
 
 const result = 5 + 5 ? "truthy" : "falsy"; // 10
 console.log(result);
-const result2 = 5 - 5 ? "truthy" : "falsy"; // 0 
+const result2 = 5 - 5 ? "truthy" : "falsy"; // 0
 console.log(result2);
 const result3 = 5 - 6 ? "truthy" : "falsy"; // -1
 console.log(result3);
-const result4 = 'Babydoll' - 6 ? "truthy" : "falsy"; // NAN
+const result4 = "Babydoll" - 6 ? "truthy" : "falsy"; // NAN
 console.log(result4);
 
-
 function clickedButton() {
-let buttonContent = document.querySelector("button").innerHTML;
-if (buttonContent = "Click Here") {
-  document.querySelector('button').innerHTML = "Clicked";
-}
+  let buttonContent = document.querySelector("button").innerHTML;
+  if (buttonContent === "Click Here") {
+    document.querySelector("button").innerHTML = "Clicked";
+  } else if (buttonContent === "Clicked") {
+    document.querySelector("button").innerHTML = "Click Here";
+  }
 }
