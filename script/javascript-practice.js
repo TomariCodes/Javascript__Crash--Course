@@ -58,3 +58,11 @@ const result3 = 5 - 6 ? "truthy" : "falsy"; // -1
 console.log(result3);
 const result4 = 'Babydoll' - 6 ? "truthy" : "falsy"; // NAN
 console.log(result4);
+
+
+function clickedButton() {
+let buttonContent = document.querySelector("button").innerHTML;
+if (buttonContent = "Click Here") {
+  document.querySelector('button').innerHTML = "Clicked";
+}
+}
