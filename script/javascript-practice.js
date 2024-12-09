@@ -67,3 +67,14 @@ function clickedButton() {
     document.querySelector("button").innerHTML = "Click Here";
   }
 }
+
+document.querySelector('.js-random-input').addEventListener('keydown', (event) => {
+console.log(event.key);
+
+if (event.key === "Enter") {
+ document.querySelector(".js-value").innerHTML += `<p>${
+   document.querySelector(".js-random-input").value
+ }</p>`;
+}
+
+});
