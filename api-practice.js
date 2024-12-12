@@ -27,6 +27,12 @@ async function fetchData() {
   }
 }
 
+document.querySelector('button').addEventListener('click', (event) => {
+  fetchData();
+});
+
+
+
 /*
 fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
   .then((response) => {
